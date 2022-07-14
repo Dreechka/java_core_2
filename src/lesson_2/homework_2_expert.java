@@ -44,27 +44,21 @@ public class homework_2_expert {
         else {
             StringBuilder stringBuilder = new StringBuilder();
             String[] data = result.split(";");
-            for (int i = 0; i < data.length; i++) {
-                if (data[i].contains("@")) {
-                    int firstIndex = data[i].lastIndexOf("@");
-                    int lastIndex = data[i].lastIndexOf(".");
-                    String replacement = "";
-                    for (int j = 0; j < lastIndex - firstIndex - 1; j++)
-                        replacement += "*";
-                    stringBuilder.append(data[i].substring(0, firstIndex - 1)).append("*").append("@").append(replacement).append(data[i].substring(lastIndex)).append(";");
+            for (String datum : data) {
+                if (datum.contains("@")) {
+                    int firstIndex = datum.lastIndexOf("@");
+                    int lastIndex = datum.lastIndexOf(".");
+                    stringBuilder.append(datum, 0, firstIndex - 1).append("*").append("@").append("*".repeat(Math.max(0, lastIndex - firstIndex - 1))).append(datum.substring(lastIndex)).append(";");
                     continue;
 
                 }
-                if (data[i].contains(" ")) {
-                    String[] temp = data[i].split(" ");
-                    String replacement = "";
-                    for (int j = 1; j < temp[0].length() - 1; j++)
-                        replacement += "*";
-                    stringBuilder.append(temp[0].substring(0, 1)).append(replacement).append(temp[0].substring(temp[0].length() - 1)).append(" ").append(temp[1]).append(" ").append(temp[2].substring(0, 1)).append(".").append(";");
-
+                if (datum.contains(" ")) {
+                    String[] temp = datum.split(" ");
+                    String replacement = "*".repeat(Math.max(0, temp[0].length() - 2));
+                    stringBuilder.append(temp[0].charAt(0)).append(replacement).append(temp[0].substring(temp[0].length() - 1)).append(" ").append(temp[1]).append(" ").append(temp[2].charAt(0)).append(".").append(";");
 
                 } else
-                    stringBuilder.append(data[i].substring(0, 4)).append("****").append(data[i].substring(7)).append(";");
+                    stringBuilder.append(datum, 0, 4).append("***").append(datum.substring(7)).append(";");
             }
             return text.replaceAll(result, stringBuilder.substring(0, stringBuilder.length() - 1));
         }
