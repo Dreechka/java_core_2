@@ -36,7 +36,7 @@ public class homework_2_basic {
         //abcde
         //abche
         char[] symbols = {'a', 'b', 'c', 'd', 'e'};
-        //System.out.println(String.valueOf(symbols).replace(3, 'h'));
+        System.out.println(String.valueOf(symbols).replace(symbols[3], 'h'));
     }
 
 
