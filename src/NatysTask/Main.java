@@ -18,7 +18,7 @@ public class Main {
         stamps.add(stamp1);
         stamps.add(stamp2);
 
-        NssPersonalCollection nssPersonalCollection = new NssPersonalCollection(coins);
+        NssPersonalCollection nssPersonalCollection = new NssPersonalCollection(coins, stamps);
         System.out.println("Содержимое коллекции №1: " + nssPersonalCollection.getCollectionValue());
 
         NssPersonalCollection nssPersonalCollection2 = new NssPersonalCollection(nssPersonalCollection);
