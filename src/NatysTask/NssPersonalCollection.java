@@ -1,6 +1,7 @@
 package NatysTask;
 
 import java.math.BigDecimal;
+import java.util.Collection;
 import java.util.List;
 
 public class NssPersonalCollection {
@@ -9,6 +10,12 @@ public class NssPersonalCollection {
     public NssPersonalCollection(List<MyPrecious> nss) {
         this.nss = nss;
     }
+
+    public NssPersonalCollection(List<MyPrecious> nss1, List<MyPrecious> nss2) {
+        nss = nss1;
+        nss.addAll(nss2);
+    }
+
 
     public NssPersonalCollection(NssPersonalCollection np) {
         this(np.nss);
