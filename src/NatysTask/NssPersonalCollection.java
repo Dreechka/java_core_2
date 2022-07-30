@@ -15,7 +15,7 @@ public class NssPersonalCollection {
         nss.addAll(nss2);
     }
 
-
+    //бонус-конструктор
     public NssPersonalCollection(NssPersonalCollection np) {
         this(np.nss);
     }
@@ -33,7 +33,7 @@ public class NssPersonalCollection {
     }
 
     public BigDecimal getCollectionValue() {
-        BigDecimal counter = new BigDecimal(0);
+        BigDecimal counter = BigDecimal.ZERO;
         for (MyPrecious mp : nss) {
             counter = counter.add(mp.getValue());
         }

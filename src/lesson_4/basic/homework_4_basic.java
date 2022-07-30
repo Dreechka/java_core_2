@@ -32,8 +32,8 @@ public class homework_4_basic {
         // Дано:
         boolean chicken = true;
         boolean vegetables = false;
-        boolean sour = true;
-        boolean toast = false;
+        boolean sause = true;
+        boolean croutons = false;
         boolean sausage = true;
         boolean eggs = false;
         // Задача: Повара попросили сделать салат.
@@ -44,7 +44,7 @@ public class homework_4_basic {
         // Написать набор условий, приготовления салатов, по приоритету (от Цезаря к овощному). Либо объявить о невозможности сделать салат.
         // Ожидаемый результат: вывод на экран сделанного салата или объявление о том, что ничего нет.
         // Проверьте работоспособность условий, через изменение значения переменных.
-        if (chicken && vegetables && sour && toast)
+        if (chicken && vegetables && sause && croutons)
             System.out.println("cezar");
         else if (vegetables && sausage && chicken && eggs)
             System.out.println("olivie");
