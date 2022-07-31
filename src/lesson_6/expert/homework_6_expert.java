@@ -68,6 +68,7 @@ public class homework_6_expert {
                     }
                 }
             }
+            bufferedReader.close();
         }
         System.out.println("Прибыль по магазину pyterochka по месяцам");
         for (Map.Entry<String, Double> entry : data.entrySet()) {
@@ -90,6 +91,7 @@ public class homework_6_expert {
                     data.put(separatedString[0], data.get(separatedString[0]) + Double.parseDouble(separatedString[2]));
                 }
             }
+            bufferedReader.close();
         }
         for (Map.Entry<String, Double> entry : data.entrySet()) {
             System.out.println("Расходы " + entry.getKey() + " за весь период: " + entry.getValue());
