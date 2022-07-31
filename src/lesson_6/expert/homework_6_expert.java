@@ -43,13 +43,14 @@ public class homework_6_expert {
 
         if (files != null) {
             getPyterochkaData(files);
+            System.out.println();
             allOutcomes(files);
         }
 
     }
 
     private static void getPyterochkaData(File[] files) throws IOException {
-        Pattern pattern = Pattern.compile("(\\d+\\/\\d{4}$)");
+        Pattern pattern = Pattern.compile("(\\d+/\\d{4}$)");
         Map<String, Double> data = new HashMap<>();
         for (File f : files) {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(f));
