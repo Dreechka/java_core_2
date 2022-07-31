@@ -1,5 +1,5 @@
 package lesson_5;
 
-public class Main {
+public class lesson_5 {
     
 }
