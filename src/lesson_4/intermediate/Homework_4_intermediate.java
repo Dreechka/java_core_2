@@ -1,6 +1,6 @@
 package lesson_4.intermediate;
 
-public class homework_4_intermediate {
+public class Homework_4_intermediate {
     public static void main(String[] args) {
         // Продвинутый уровень
         // Задание №1: Написать цикл, который будет прибавлять число к result до тех пор,

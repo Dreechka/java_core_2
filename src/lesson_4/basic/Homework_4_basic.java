@@ -1,6 +1,6 @@
 package lesson_4.basic;
 
-public class homework_4_basic {
+public class Homework_4_basic {
     public static void main(String[] args) {
         // Домашка
         // Базовый уровень

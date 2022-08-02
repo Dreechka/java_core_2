@@ -1,6 +1,6 @@
 package lesson_2;
 
-public class homework_2_basic {
+public class Homework_2_basic {
     public static void main(String[] args) {
         //Базовый уровень
         //Задача №1

@@ -2,7 +2,7 @@ package lesson_6.basic;
 
 import java.io.*;
 
-public class homework_6_basic {
+public class Homework_6_basic {
     public static void main(String[] args) {
 
 

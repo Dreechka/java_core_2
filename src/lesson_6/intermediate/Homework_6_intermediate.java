@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class homework_6_intermediate {
+public class Homework_6_intermediate {
     public static void main(String[] args) {
         //Продвинутый уровень
         //Задача №1
@@ -67,8 +67,8 @@ public class homework_6_intermediate {
 
             int totalIncomes = 0;
             int totalOutcomes = 0;
-            for (String s : data) {
-                String[] temp = s.split(" ");
+            for (String string : data) {
+                String[] temp = string.split(" ");
                 totalIncomes += Integer.parseInt(temp[2].substring(0, temp[2].length() - 1));
                 totalOutcomes += Integer.parseInt(temp[5]);
             }

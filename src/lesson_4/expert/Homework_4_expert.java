@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class homework_4_expert {
+public class Homework_4_expert {
     // Экспертный уровень:
     // Предыстория: Мы находимся в статистическом институте. Хочется понять уровень миграции между регионами за месяц.
     // Для этого было решено произвести анализ передвижения автомобилей: на границе каждого региона стоят камеры,

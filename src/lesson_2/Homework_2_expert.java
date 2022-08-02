@@ -3,7 +3,7 @@ package lesson_2;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class homework_2_expert {
+public class Homework_2_expert {
     public static void main(String[] args) {
         String text1 = "<client>(Какие то данные)<data>79991113344;test@yandex.ru;Иванов Иван Иванович</data></client>";
         String text2 = "<client>(Какие то данные)<data></data></client>";

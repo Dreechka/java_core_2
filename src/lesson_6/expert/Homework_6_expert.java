@@ -9,7 +9,7 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class homework_6_expert {
+public class Homework_6_expert {
     public static void main(String[] args) throws IOException {
         //Экспертный уровень
         // Дано: папка, внутри которой находятся файлы, следующего именования - report_01_2012.txt, где 01 - месяц, 2012 - год
@@ -52,8 +52,8 @@ public class homework_6_expert {
     private static void getPyterochkaData(File[] files) throws IOException {
         Pattern pattern = Pattern.compile("(\\d+/\\d{4}$)");
         Map<String, Double> data = new HashMap<>();
-        for (File f : files) {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(f));
+        for (File file : files) {
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
             bufferedReader.readLine(); //пропуск строки "магазин;доход;расход;дата"
             while (bufferedReader.ready()) {
                 String[] separatedString = bufferedReader.readLine().split(";");
@@ -80,8 +80,8 @@ public class homework_6_expert {
 
     private static void allOutcomes(File[] files) throws IOException {
         Map<String, Double> data = new HashMap<>();
-        for (File f : files) {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(f));
+        for (File file : files) {
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
             bufferedReader.readLine(); //пропуск строки "магазин;доход;расход;дата"
             while (bufferedReader.ready()) {
                 String[] separatedString = bufferedReader.readLine().split(";");

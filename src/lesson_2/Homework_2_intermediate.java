@@ -3,7 +3,7 @@ package lesson_2;
 import java.util.Arrays;
 import java.util.Locale;
 
-public class homework_2_intermediate {
+public class Homework_2_intermediate {
     public static void main(String[] args) {
         //Продвинутый уровень
         //Задача №1
