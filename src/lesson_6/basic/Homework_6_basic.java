@@ -25,7 +25,7 @@ public class Homework_6_basic {
         // 1. Создать файл "my_first_file.txt". На первой строке написать: "Моя бабушка", на второй: "читает газету жизнь"
         // 2. Прочитать файл, и вывести на экран все слова файла в одну строку
         // Ожидаемый результат: "Моя бабушка читает газету жизнь"
-        try (BufferedReader bf = new BufferedReader(new FileReader("C:\\repos\\src\\lesson_6\\basic\\my_first_file.txt"))) {
+        try (BufferedReader bf = new BufferedReader(new FileReader("C:\\repos\\src\\lesson_6\\lesson_8.basic\\my_first_file.txt"))) {
             StringBuilder stringBuilder = new StringBuilder();
             while (bf.ready()) {
                 stringBuilder.append(bf.readLine()).append(" ");
@@ -45,7 +45,7 @@ public class Homework_6_basic {
         // 4. Записать в файл "report.txt" данные из объекта класса.
         // Ожидаемый результат: в файле report.txt - одна строка: доходы = 500, расходы = 300
         FinancialRecord financialRecord1 = new FinancialRecord(500, 300);
-        File file = new File("C:\\repos\\src\\lesson_6\\basic\\report.txt");
+        File file = new File("C:\\repos\\src\\lesson_6\\lesson_8.basic\\report.txt");
 
         try (FileWriter fileWriter = new FileWriter(file)) {
             String stringToFile = "доходы = " + financialRecord1.getIncomes() + ", " +

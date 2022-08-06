@@ -49,7 +49,7 @@ public class Homework_6_intermediate {
             records[i] = new FinancialRecord(random.nextInt(10000), random.nextInt(10000));
         }
 
-        File file = new File("C:\\repos\\src\\lesson_6\\intermediate\\report.txt");
+        File file = new File("C:\\repos\\src\\lesson_6\\lesson_8.intermediate\\report.txt");
         try (FileWriter fileWriter = new FileWriter(file); BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
             StringBuilder stringBuilder = new StringBuilder();
             for (FinancialRecord record : records) {
