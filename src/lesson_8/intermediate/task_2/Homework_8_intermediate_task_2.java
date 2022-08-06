@@ -18,14 +18,16 @@ public class Homework_8_intermediate_task_2 {
         // Ошибка: Часы сломались.
         Employee vasya = new Employee(new Watch(false));
         Employee evgenNicolaich = new Employee(new Watch(true));
-        Store store1 = new Store(vasya);
-        Store store2 = new Store(evgenNicolaich);
+        Store store1 = new Store(new Employee[]{vasya});
+        Store store2 = new Store(new Employee[]{evgenNicolaich});
         Brand puma = new Brand(new Store[]{store1, store2});
         for (Store store : puma.getStores()) {
-            try {
-                store.getEmployee().getWatch().tic();
-            } catch (WatchBrokenError e) {
-                System.out.println(e.getMessage());
+            for (Employee employee : store.getEmployee()) {
+                try {
+                    employee.getWatch().tic();
+                } catch (WatchBrokenError e) {
+                    System.out.println(e.getMessage());
+                }
             }
         }
     }

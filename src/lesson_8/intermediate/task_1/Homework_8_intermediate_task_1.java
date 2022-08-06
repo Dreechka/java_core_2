@@ -17,16 +17,14 @@ public class Homework_8_intermediate_task_1 {
         // роза: умееть пахнуть
         // роза: умеет цвести
         // папоротник: умеет цвести
-        Smellable[] smellable = new Smellable[]{new Pine(true), new Fir(true)};
+        Rose rose = new Rose();
+        Smellable[] smellable = new Smellable[]{new Pine(true), new Fir(true), rose};
         for (Smellable tree : smellable) {
             tree.canSmell();
         }
 
-        Bloomable[] bloomable = new Bloomable[]{new Rose(), new Fern()};
+        Bloomable[] bloomable = new Bloomable[]{rose, new Fern()};
         for (Bloomable plant : bloomable) {
-            if (plant instanceof Rose) {
-                ((Rose) plant).canSmell();
-            }
             plant.canBloom();
         }
     }
